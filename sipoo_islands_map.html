@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_18aeb36c76bbeac7504fb6c73ac1a744 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_18aeb36c76bbeac7504fb6c73ac1a744" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_18aeb36c76bbeac7504fb6c73ac1a744 = L.map(
+                "map_18aeb36c76bbeac7504fb6c73ac1a744",
+                {
+                    center: [60.1563035, 25.341619233333333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_030a45b879abf3d3a6f6da5adebe8147 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_030a45b879abf3d3a6f6da5adebe8147.addTo(map_18aeb36c76bbeac7504fb6c73ac1a744);
+    
+            var marker_f3812a1b88a7fcdb679acd8404416aa7 = L.marker(
+                [60.2589523, 25.2348183],
+                {}
+            ).addTo(map_18aeb36c76bbeac7504fb6c73ac1a744);
+        
+    
+            var icon_4eed3efb45bd8a5b0112e75ea3ca279a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3812a1b88a7fcdb679acd8404416aa7.setIcon(icon_4eed3efb45bd8a5b0112e75ea3ca279a);
+        
+    
+        var popup_7fba13ad57f967950e69bd0bab60a3f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e443d2e20bcc515df8b4ac66717cf1c6 = $(`<div id="html_e443d2e20bcc515df8b4ac66717cf1c6" style="width: 100.0%; height: 100.0%;">Sipoonranta, Sipoo<br>Kayaking base<br>Lat: 60.2589523<br>Lon: 25.2348183</div>`)[0];
+                popup_7fba13ad57f967950e69bd0bab60a3f1.setContent(html_e443d2e20bcc515df8b4ac66717cf1c6);
+            
+        
+
+        marker_f3812a1b88a7fcdb679acd8404416aa7.bindPopup(popup_7fba13ad57f967950e69bd0bab60a3f1)
+        ;
+
+        
+    
+    
+            var marker_7a084bc78dbf34acc8f603929460e70c = L.marker(
+                [60.1715066, 25.3373966],
+                {}
+            ).addTo(map_18aeb36c76bbeac7504fb6c73ac1a744);
+        
+    
+            var icon_e77b6e84a18490f2af4e6dff9ca0d4c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a084bc78dbf34acc8f603929460e70c.setIcon(icon_e77b6e84a18490f2af4e6dff9ca0d4c6);
+        
+    
+        var popup_b92658e016af6c19268f2e89d921f58b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_618681d2e0d63b7a211178cb65654cd7 = $(`<div id="html_618681d2e0d63b7a211178cb65654cd7" style="width: 100.0%; height: 100.0%;">Kaunissaari, Sipoo<br>Beautiful islands with services<br>Lat: 60.1715066<br>Lon: 25.3373966</div>`)[0];
+                popup_b92658e016af6c19268f2e89d921f58b.setContent(html_618681d2e0d63b7a211178cb65654cd7);
+            
+        
+
+        marker_7a084bc78dbf34acc8f603929460e70c.bindPopup(popup_b92658e016af6c19268f2e89d921f58b)
+        ;
+
+        
+    
+    
+            var marker_3d7469efeddb1be0648d5ab880b8d748 = L.marker(
+                [60.1660546, 25.4391234],
+                {}
+            ).addTo(map_18aeb36c76bbeac7504fb6c73ac1a744);
+        
+    
+            var icon_66468cea6afa2bb87c54df419625bc70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d7469efeddb1be0648d5ab880b8d748.setIcon(icon_66468cea6afa2bb87c54df419625bc70);
+        
+    
+        var popup_729f92f0922eaa4c153d54299a65c1d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5187e51a8464e8f75d8f29e4bf7e3c36 = $(`<div id="html_5187e51a8464e8f75d8f29e4bf7e3c36" style="width: 100.0%; height: 100.0%;">Pirttisaari, Porvoo<br>Old artillery base<br>Lat: 60.1660546<br>Lon: 25.4391234</div>`)[0];
+                popup_729f92f0922eaa4c153d54299a65c1d3.setContent(html_5187e51a8464e8f75d8f29e4bf7e3c36);
+            
+        
+
+        marker_3d7469efeddb1be0648d5ab880b8d748.bindPopup(popup_729f92f0922eaa4c153d54299a65c1d3)
+        ;
+
+        
+    
+    
+            var marker_2b273bd754d170eb0ed32d361cdc09dc = L.marker(
+                [60.1090442, 25.4097558],
+                {}
+            ).addTo(map_18aeb36c76bbeac7504fb6c73ac1a744);
+        
+    
+            var icon_c9114b9eb89fb76ffd82e158a034b439 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b273bd754d170eb0ed32d361cdc09dc.setIcon(icon_c9114b9eb89fb76ffd82e158a034b439);
+        
+    
+        var popup_7e90d8a7333b441c81b98db74dee01d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c994d0d0e83ced5dd2501a855f83396f = $(`<div id="html_c994d0d0e83ced5dd2501a855f83396f" style="width: 100.0%; height: 100.0%;">Majakkasaari, Porvoo<br>Lighthouse island<br>Lat: 60.1090442<br>Lon: 25.4097558</div>`)[0];
+                popup_7e90d8a7333b441c81b98db74dee01d1.setContent(html_c994d0d0e83ced5dd2501a855f83396f);
+            
+        
+
+        marker_2b273bd754d170eb0ed32d361cdc09dc.bindPopup(popup_7e90d8a7333b441c81b98db74dee01d1)
+        ;
+
+        
+    
+    
+            var marker_aa63fd1dde1684163f688444703a58ee = L.marker(
+                [60.1082037, 25.4063188],
+                {}
+            ).addTo(map_18aeb36c76bbeac7504fb6c73ac1a744);
+        
+    
+            var icon_0400b03b350d228ec832d38e7f385ae5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aa63fd1dde1684163f688444703a58ee.setIcon(icon_0400b03b350d228ec832d38e7f385ae5);
+        
+    
+        var popup_4e7f46b2665124e8a7d1508c271c42a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a6f61f6c3ba79ab5a61d7e710737f3d = $(`<div id="html_7a6f61f6c3ba79ab5a61d7e710737f3d" style="width: 100.0%; height: 100.0%;">Luotsisaari, Porvoo<br>Old pilot base<br>Lat: 60.1082037<br>Lon: 25.4063188</div>`)[0];
+                popup_4e7f46b2665124e8a7d1508c271c42a1.setContent(html_7a6f61f6c3ba79ab5a61d7e710737f3d);
+            
+        
+
+        marker_aa63fd1dde1684163f688444703a58ee.bindPopup(popup_4e7f46b2665124e8a7d1508c271c42a1)
+        ;
+
+        
+    
+    
+            var marker_dcbfca95559f358429d21318748d41b2 = L.marker(
+                [60.1240596, 25.2223025],
+                {}
+            ).addTo(map_18aeb36c76bbeac7504fb6c73ac1a744);
+        
+    
+            var icon_d8a234449f0a7d030b556e218c70446f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dcbfca95559f358429d21318748d41b2.setIcon(icon_d8a234449f0a7d030b556e218c70446f);
+        
+    
+        var popup_79d83ee13da9898585e21e8ce534d8a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2f302305fc731bc57ca2fbfe7c9f9c2 = $(`<div id="html_b2f302305fc731bc57ca2fbfe7c9f9c2" style="width: 100.0%; height: 100.0%;">Eestiluoto, Sipoo<br>Nice islands far away<br>Lat: 60.1240596<br>Lon: 25.2223025</div>`)[0];
+                popup_79d83ee13da9898585e21e8ce534d8a2.setContent(html_b2f302305fc731bc57ca2fbfe7c9f9c2);
+            
+        
+
+        marker_dcbfca95559f358429d21318748d41b2.bindPopup(popup_79d83ee13da9898585e21e8ce534d8a2)
+        ;
+
+        
+    
+</script>
+</html>
