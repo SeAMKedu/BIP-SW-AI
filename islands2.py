@@ -47,7 +47,7 @@ for island in islands:
 if coordinates:
     avg_lat = sum(item["lat"] for item in coordinates) / len(coordinates)
     avg_lon = sum(item["lon"] for item in coordinates) / len(coordinates)
-    m = folium.Map(location=[avg_lat, avg_lon], zoom_start=11)
+    m = folium.Map(location=[avg_lat, avg_lon], zoom_start=11, tiles='CartoDB positron')
 
     for item in coordinates:
         popup_text = f"{item['name']}, {item['city']}<br>{item['notes']}<br>Lat: {item['lat']}<br>Lon: {item['lon']}"

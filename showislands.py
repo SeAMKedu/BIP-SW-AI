@@ -49,7 +49,7 @@ if coordinates:
     # Calculate center as average of all lat/lon
     avg_lat = sum(lat for lat, _ in coordinates.values()) / len(coordinates)
     avg_lon = sum(lon for _, lon in coordinates.values()) / len(coordinates)
-    m = folium.Map(location=[avg_lat, avg_lon], zoom_start=11)
+    m = folium.Map(location=[avg_lat, avg_lon], zoom_start=11, tiles='CartoDB positron')
 
     # Add markers for each island
     for island, (lat, lon) in coordinates.items():
