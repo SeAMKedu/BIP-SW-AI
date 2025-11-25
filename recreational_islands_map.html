@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_94b5aaac9a9f5bb22580566831126fa5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_94b5aaac9a9f5bb22580566831126fa5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_94b5aaac9a9f5bb22580566831126fa5 = L.map(
+                "map_94b5aaac9a9f5bb22580566831126fa5",
+                {
+                    center: [60.1563035, 25.341619233333336],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_36f6a4c556d6cf70fb12982f91bb8874 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_36f6a4c556d6cf70fb12982f91bb8874.addTo(map_94b5aaac9a9f5bb22580566831126fa5);
+        
+    
+            var marker_23c5f7166e25e406a579224f8a00ad06 = L.marker(
+                [60.2589523, 25.2348183],
+                {
+}
+            ).addTo(map_94b5aaac9a9f5bb22580566831126fa5);
+        
+    
+            var icon_3ebd55ec94135c1326b2330781316f37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "anchor",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fe8d2285922b923082913af0c81dfda = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df38d43d9005197fc4d7be8a3f389324 = $(`<div id="html_df38d43d9005197fc4d7be8a3f389324" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Sipoonranta</h4>             <p style="margin: 5px 0;"><b>City:</b> Sipoo</p>             <p style="margin: 5px 0;"><b>Notes:</b> Kayaking base</p>             <p style="margin: 5px 0; font-size: 0.9em; color: #666;">                 <b>Coordinates:</b><br>                 60.258952, 25.234818             </p>         </div>         </div>`)[0];
+                popup_7fe8d2285922b923082913af0c81dfda.setContent(html_df38d43d9005197fc4d7be8a3f389324);
+            
+        
+
+        marker_23c5f7166e25e406a579224f8a00ad06.bindPopup(popup_7fe8d2285922b923082913af0c81dfda)
+        ;
+
+        
+    
+    
+            marker_23c5f7166e25e406a579224f8a00ad06.bindTooltip(
+                `<div>
+                     Sipoonranta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_23c5f7166e25e406a579224f8a00ad06.setIcon(icon_3ebd55ec94135c1326b2330781316f37);
+            
+    
+            var marker_ff3dcf18a53fb9e0b9da76245fd3949e = L.marker(
+                [60.1715066, 25.3373966],
+                {
+}
+            ).addTo(map_94b5aaac9a9f5bb22580566831126fa5);
+        
+    
+            var icon_2589b2d2020a78634f54be584662bc3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "anchor",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cd089f9b67285c6004205abe42f7a45 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_454024dc0b4acf7b31d358fe79c59e01 = $(`<div id="html_454024dc0b4acf7b31d358fe79c59e01" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Kaunissaari</h4>             <p style="margin: 5px 0;"><b>City:</b> Sipoo</p>             <p style="margin: 5px 0;"><b>Notes:</b> Beautiful islands with services</p>             <p style="margin: 5px 0; font-size: 0.9em; color: #666;">                 <b>Coordinates:</b><br>                 60.171507, 25.337397             </p>         </div>         </div>`)[0];
+                popup_1cd089f9b67285c6004205abe42f7a45.setContent(html_454024dc0b4acf7b31d358fe79c59e01);
+            
+        
+
+        marker_ff3dcf18a53fb9e0b9da76245fd3949e.bindPopup(popup_1cd089f9b67285c6004205abe42f7a45)
+        ;
+
+        
+    
+    
+            marker_ff3dcf18a53fb9e0b9da76245fd3949e.bindTooltip(
+                `<div>
+                     Kaunissaari
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff3dcf18a53fb9e0b9da76245fd3949e.setIcon(icon_2589b2d2020a78634f54be584662bc3b);
+            
+    
+            var marker_1fdc40d302992a2d2dbfadece847b362 = L.marker(
+                [60.1660546, 25.4391234],
+                {
+}
+            ).addTo(map_94b5aaac9a9f5bb22580566831126fa5);
+        
+    
+            var icon_698d7fc1c8c592892395e1fd84dbe751 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "anchor",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d70fb6fa4ed09d20dbc2852d8c3037d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8886a4bdbc2696a1ab8ca0e69d23f2b = $(`<div id="html_f8886a4bdbc2696a1ab8ca0e69d23f2b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Pirttisaari</h4>             <p style="margin: 5px 0;"><b>City:</b> Porvoo</p>             <p style="margin: 5px 0;"><b>Notes:</b> Old artillery base</p>             <p style="margin: 5px 0; font-size: 0.9em; color: #666;">                 <b>Coordinates:</b><br>                 60.166055, 25.439123             </p>         </div>         </div>`)[0];
+                popup_6d70fb6fa4ed09d20dbc2852d8c3037d.setContent(html_f8886a4bdbc2696a1ab8ca0e69d23f2b);
+            
+        
+
+        marker_1fdc40d302992a2d2dbfadece847b362.bindPopup(popup_6d70fb6fa4ed09d20dbc2852d8c3037d)
+        ;
+
+        
+    
+    
+            marker_1fdc40d302992a2d2dbfadece847b362.bindTooltip(
+                `<div>
+                     Pirttisaari
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1fdc40d302992a2d2dbfadece847b362.setIcon(icon_698d7fc1c8c592892395e1fd84dbe751);
+            
+    
+            var marker_e32173627f3ca67584897feb5f798d32 = L.marker(
+                [60.1090442, 25.4097558],
+                {
+}
+            ).addTo(map_94b5aaac9a9f5bb22580566831126fa5);
+        
+    
+            var icon_6d6a5bc713728d9b6b54ebc8091998e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "anchor",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1622ff8840e8b26fbbef01ff93dc8df1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_933224e964c1ee5ccbbae1c6c0beaa34 = $(`<div id="html_933224e964c1ee5ccbbae1c6c0beaa34" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Majakkasaari</h4>             <p style="margin: 5px 0;"><b>City:</b> Porvoo</p>             <p style="margin: 5px 0;"><b>Notes:</b> Lighthouse island</p>             <p style="margin: 5px 0; font-size: 0.9em; color: #666;">                 <b>Coordinates:</b><br>                 60.109044, 25.409756             </p>         </div>         </div>`)[0];
+                popup_1622ff8840e8b26fbbef01ff93dc8df1.setContent(html_933224e964c1ee5ccbbae1c6c0beaa34);
+            
+        
+
+        marker_e32173627f3ca67584897feb5f798d32.bindPopup(popup_1622ff8840e8b26fbbef01ff93dc8df1)
+        ;
+
+        
+    
+    
+            marker_e32173627f3ca67584897feb5f798d32.bindTooltip(
+                `<div>
+                     Majakkasaari
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e32173627f3ca67584897feb5f798d32.setIcon(icon_6d6a5bc713728d9b6b54ebc8091998e0);
+            
+    
+            var marker_e04893a530b8efac3b9823380d9478db = L.marker(
+                [60.1082037, 25.4063188],
+                {
+}
+            ).addTo(map_94b5aaac9a9f5bb22580566831126fa5);
+        
+    
+            var icon_59cf8b79a520acc2f63e0c5189f1baae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "anchor",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24ea070d4890e220e56b54cc6bf92a27 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4bec1b1ad12f06e4eb4811422a7b788 = $(`<div id="html_a4bec1b1ad12f06e4eb4811422a7b788" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Luotsisaari</h4>             <p style="margin: 5px 0;"><b>City:</b> Porvoo</p>             <p style="margin: 5px 0;"><b>Notes:</b> Old pilot base</p>             <p style="margin: 5px 0; font-size: 0.9em; color: #666;">                 <b>Coordinates:</b><br>                 60.108204, 25.406319             </p>         </div>         </div>`)[0];
+                popup_24ea070d4890e220e56b54cc6bf92a27.setContent(html_a4bec1b1ad12f06e4eb4811422a7b788);
+            
+        
+
+        marker_e04893a530b8efac3b9823380d9478db.bindPopup(popup_24ea070d4890e220e56b54cc6bf92a27)
+        ;
+
+        
+    
+    
+            marker_e04893a530b8efac3b9823380d9478db.bindTooltip(
+                `<div>
+                     Luotsisaari
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e04893a530b8efac3b9823380d9478db.setIcon(icon_59cf8b79a520acc2f63e0c5189f1baae);
+            
+    
+            var marker_342c4d9fd3bde0e2a884e35ba8d5990f = L.marker(
+                [60.1240596, 25.2223025],
+                {
+}
+            ).addTo(map_94b5aaac9a9f5bb22580566831126fa5);
+        
+    
+            var icon_900efe8bfa0b1e57ab0b0fc2f9a2dd54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "anchor",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_495db6ffc8f6942bf360cfd994673d5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d6cb80d936c6f73c2478f5c818ecb45c = $(`<div id="html_d6cb80d936c6f73c2478f5c818ecb45c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Eestiluoto</h4>             <p style="margin: 5px 0;"><b>City:</b> Sipoo</p>             <p style="margin: 5px 0;"><b>Notes:</b> Nice islands far away</p>             <p style="margin: 5px 0; font-size: 0.9em; color: #666;">                 <b>Coordinates:</b><br>                 60.124060, 25.222303             </p>         </div>         </div>`)[0];
+                popup_495db6ffc8f6942bf360cfd994673d5e.setContent(html_d6cb80d936c6f73c2478f5c818ecb45c);
+            
+        
+
+        marker_342c4d9fd3bde0e2a884e35ba8d5990f.bindPopup(popup_495db6ffc8f6942bf360cfd994673d5e)
+        ;
+
+        
+    
+    
+            marker_342c4d9fd3bde0e2a884e35ba8d5990f.bindTooltip(
+                `<div>
+                     Eestiluoto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_342c4d9fd3bde0e2a884e35ba8d5990f.setIcon(icon_900efe8bfa0b1e57ab0b0fc2f9a2dd54);
+            
+</script>
+</html>
